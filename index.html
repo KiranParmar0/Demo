@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final demo
+
+    </title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+    <!-- The next line is optional: MathJax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--Swiper sildes-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+
+</head>
+
+
+<body>
+
+    <section id="section0">
+        <header id="nav_header">
+            <nav class="navbar navbar-light  fixed-top " id="navbar-example2"
+                style="background-color: #DDEAF6; max-height: 200px;">
+                <div class="container-fluid collapse navbar-collapse">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col ">
+                                <img id="logo" class="rounded float-start " src="assets/logo.png" alt="Person">
+                            </div>
+                            <div class="col">
+
+                                <p class="text-center fs-4">Introduction to Limits </p>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown float-end">
+                                    <img id="login" class="rounded float" src="assets/login.png" alt="Person">
+                                    <button class="btn btn-success dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        User Name
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item active" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Grades</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row" style="background-color: #027bec">
+                            <div class="col">
+                                <div class="dropdown ">
+                                    <button class="btn btn-primary dropdown-toggle " type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Topics
+                                    </button>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item active" href="#"> Topic 1
+                                                <img id="navclickImg" class="float-end " src="assets/0.png"
+                                                    alt="Person">
+                                            </a></li>
+                                        <li><a class="dropdown-item" href="#"> Topic 2</a></li>
+                                        <li><a class="dropdown-item" href="#"> Topic 3</a></li>
+                                        <li><a class="dropdown-item" href="#"> Topic 4</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <p class="text-center fs-5 topicTitle">Estimation using
+                                    Tables and Graphs
+                                </p>
+                            </div>
+                            <div class="col-sm">
+                                <div class="col">
+                                    <div class="dropdown float-end ">
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            My courses
+                                        </button>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item active" href="#">Course 1
+                                                    <img id="navclickImg" class="float-end " src="assets/0.png"
+                                                        alt="Person">
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">Course 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Course 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Course 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Course 5</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item col-sm navListItem">
+                                    <a id="n1" class="nav-link" href="#section1">
+                                        <div id="navCon">
+                                            <img id="navImg" src="assets/1.png" alt="Person">
+                                            Introduction
+
+                                        </div>
+                                        <img id="clickImg" class="float-end hidden" src="assets/0.png" alt="Person">
+                                    </a>
+
+                                </li>
+                                <li class="nav-item col-sm navListItem">
+                                    <a class="nav-link" class="nav-item" href="#section2">
+                                        <div id="navCon">
+                                            <img id="navImg" src="assets/2.png" alt="Person">
+                                            Explanation
+                                        </div>
+                                        <img id="clickImg" class="float-end hidden" src="assets/0.png" alt="Person">
+                                    </a>
+                                </li>
+                                <li class="nav-item col-sm navListItem">
+                                    <a class="nav-link" class="nav-item" href="#section3">
+                                        <div id="navCon">
+                                            <img id="navImg" src="assets/3.png" alt="Person">
+                                            Practice-Zone
+                                        </div>
+                                        <img id="clickImg" class="float-end hidden" src="assets/0.png" alt="Person">
+                                    </a>
+                                </li>
+                                <li class="nav-item col-sm navListItem">
+                                    <a class="nav-link" class="nav-item" href="#section4">
+                                        <div id="navCon">
+                                            <img id="navImg" src="assets/4.png" alt="Person">
+                                            Solve
+                                        </div>
+                                        <img id="clickImg" class="float-end hidden" src="assets/0.png" alt="Person">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+    </section>
+
+    <section>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="scrollspy-example  p-1 rounded-2" tabindex="0">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <section id="section1" class="container-fluid pageSection">
+                            <div class="container-xl intro internalDiv">
+
+                                <div class="row  align-items-center ">
+                                    <div class="col-3 ">
+
+                                        <div class="align-items-start ">
+                                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical">
+                                                <div class="col my">
+                                                    <img id="navImg" class="rounded float " src="assets/img1.png"
+                                                        alt="Person">
+                                                    <button
+                                                        class="nav-link active sec1button border border-primary introButton"
+                                                        id="v-pills-learObj-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-learObj" type="button" role="tab"
+                                                        aria-controls="v-pills-learObj" aria-selected="true">
+                                                        Learning Objectives
+                                                    </button>
+                                                    <img id="clickImg" class="rounded float " src="assets/0.png"
+                                                        alt="Person">
+                                                </div>
+                                                <div class="col my">
+                                                    <img id="navImg" class="rounded float " src="assets/img2.png"
+                                                        alt="Person">
+                                                    <button
+                                                        class="nav-link  sec1button  border border-primary introButton"
+                                                        id="Def-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Def"
+                                                        type="button" role="tab" aria-controls="v-pills-Def"
+                                                        aria-selected="false">
+                                                        Definition
+                                                    </button>
+                                                    <img id="clickImg" class="rounded float hidden" src="assets/0.png"
+                                                        alt="Person">
+                                                </div>
+                                                <div class="col my">
+                                                    <img id="navImg" class="rounded float " src="assets/img3.png"
+                                                        alt="Person">
+                                                    <button
+                                                        class="nav-link  sec1button border border-primary introButton"
+                                                        id="note-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-note" type="button" role="tab"
+                                                        aria-controls="v-pills-note" aria-selected="false">
+                                                        Notation
+                                                    </button>
+                                                    <img id="clickImg" class="rounded float hidden" src="assets/0.png"
+                                                        alt="Person">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col border border-5 overflow-auto"
+                                        style="height: 450px; background-color: rgba(0,0,255,.1)">
+                                        <div class="tab-content " id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active " id="v-pills-learObj" role="tabpanel"
+                                                aria-labelledby="v-pills-learObj-tab">
+                                                <ul>
+                                                    <li>Using correct notation, describe the limit of a function.</li>
+                                                    <li>Use a table of values to estimate the limit of a function or to
+                                                        identify
+                                                        when
+                                                        the limit does not exist.</li>
+                                                    <li>Use a graph to estimate the limit of a function or to identify
+                                                        when the
+                                                        limit
+                                                        does not exist.
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-Def" role="tabpanel"
+                                                aria-labelledby="v-pills-Def-tab">
+                                                <h3>Intuitive Definition of a Limit</h3>
+                                                <img id="co" class="rounded float " src="assets/con2.jpg"
+                                                    alt="Person">
+                                                    <br>
+                                                    <img id="co" class="rounded float " src="assets/con2.1.jpg"
+                                                    alt="Person">
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-note" role="tabpanel"
+                                                aria-labelledby="v-pills-note-tab">
+                                                f(x): functional values
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <section id="section5">
+                                <footer class="bg-light text-center text-lg-start">
+                                    <!-- Copyright -->
+                                    <div class="text-center " style="background-color: rgba(0, 0, 0, 0.2);">
+                                        © 2021 Copyright:
+                                        <a class="text-dark" href="https://upthink.com/">Upthink.com</a>
+                                    </div>
+                                    <!-- Copyright -->
+                                </footer>
+                            </section>
+                        </section>
+
+                    </div>
+                    <div class="swiper-slide ">
+                        <section id="section2" class="container-fluid pageSection">
+                            <div class="container-xl intro internalDiv">
+
+                                <div class="row  align-items-center ">
+                                    <div class="col-3 ">
+                                        <div class="align-items-start">
+                                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical">
+                                                <div class="col my">
+                                                    <img id="navImg" class="rounded float " src="assets/img4.png"
+                                                        alt="Person">
+                                                    <button class="nav-link active sec1button border border-primary "
+                                                        id="v-pills-concept-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-concept" type="button" role="tab"
+                                                        aria-controls="v-pills-concept" aria-selected="true">
+                                                        Concept in Detail
+                                                    </button>
+                                                    <img id="clickImg" class="rounded float " src="assets/0.png"
+                                                        alt="Person">
+                                                </div>
+                                                <div class="col my">
+                                                    <img id="navImg" class="rounded float " src="assets/img5.png"
+                                                        alt="Person">
+                                                    <button
+                                                        class="nav-link  sec1button border border-primary introButton"
+                                                        id="videoe-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-video" type="button" role="tab"
+                                                        aria-controls="v-pills-video" aria-selected="false">
+                                                        Watch Video
+                                                    </button>
+                                                    <img id="clickImg" class="rounded float hidden" src="assets/0.png"
+                                                        alt="Person">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col border border-5 overflow-auto"
+                                        style="height: 350px; background-color: rgba(0,0,255,.1)">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-concept" role="tabpanel"
+                                                aria-labelledby="v-pills-concept-tab">
+                                                The concept of a limit or limiting process, essential to the
+                                                understanding of
+                                                calculus,
+                                                has been around for thousands of years. In fact, early mathematicians
+                                                used a
+                                                limiting
+                                                process to obtain better and better approximations of areas of circles.
+                                                Yet, the
+                                                formal
+                                                definition of a limit—as we know and understand it today—did not appear
+                                                until the
+                                                late
+                                                19th century.
+                                                <br><br>
+                                                We, therefore, begin our quest to understand limits, as our mathematical
+                                                ancestors did, by using an intuitive approach.
+                                                <br>
+                                                <img id="conImg1" class="rounded  " src="assets/con1.jpg" alt="Person">
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-video" role="tabpanel"
+                                                aria-labelledby="v-pills-video-tab">
+
+                                                <video controls id="video">
+                                                    <source src="./assets/video1.mp4" type="video/mp4">
+
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-xl intro overflow-auto">
+                                <div class="row  align-items-end ">
+                                    <div class="col my">
+                                        <img id="navImg" class="rounded float " src="assets/img6.png" alt="Person">
+                                        <div class="sec2end sec1butto">
+                                            Content
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <section id="section5">
+                                <footer class="bg-light text-center text-lg-start">
+                                    <!-- Copyright -->
+                                    <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+                                        © 2021 Copyright:
+                                        <a class="text-dark" href="https://upthink.com/">Upthink.com</a>
+                                    </div>
+                                    <!-- Copyright -->
+                                </footer>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section id="section3" class="container-fluid pageSection">
+                            <div class="container-xl intro internalDiv">
+                                <div class="container-xl tryit">
+                                    <div class="row">
+                                        <div class="col ">
+                                            <a id="n1" class="nav-link">
+                                                <div id="navCon">
+                                                    <img id="navImg" src="assets/img7.png" alt="Person">
+                                                    Try It
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col order-1">
+                                            <a id="n1" class="nav-link">
+                                                <div id="navCon " class="d-flex justify-content-end">
+                                                    <img id="navImg" src="assets/img8.png" alt="Person">
+                                                    <div class="col-md-4"> <button type="button"
+                                                            class="btn btn-secondary" data-bs-toggle="modal"
+                                                            data-bs-target="#staticBackdrop2">
+                                                            <col>
+                                                            Glossary
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="staticBackdrop2"
+                                                            data-bs-backdrop="static" data-bs-keyboard="false"
+                                                            tabindex="-1" aria-labelledby="staticBackdrop2Label"
+                                                            aria-hidden="true">
+                                                            <div
+                                                                class=" modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5 "
+                                                                            id="staticBackdrop2Label">
+                                                                            Glossary </h1>
+                                                                        <button type="button" class="btn-close"
+                                                                            data-bs-dismiss="modal"
+                                                                            aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body ">
+                                                                        <p> DNE: Does not exist”
+                                                                        </p>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row  align-items-center ">
+                                    <p id="Problem">
+                                        Evaluate \(\displaystyle \lim_{x\ \to \ 4} \frac{\sqrt{x}-2}{x-4} \)
+                                        using a table of functional values
+
+                                    </p>
+                                </div>
+                                <div class="row  align-items-center ">
+                                    <div class="col-3 ">
+
+                                        <div class=" align-items-start">
+                                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical">
+                                                <div class="col my">
+                                                    <img id="navImg" class="rounded float " src="assets/n1.png"
+                                                        alt="Person">
+                                                    <button class="nav-link active sec1button border border-primary"
+                                                        id="v-pills-step1-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-step1" type="button" role="tab"
+                                                        aria-controls="v-pills-step1" aria-selected="true">
+                                                        Step statement
+                                                    </button>
+                                                    <img id="clickImg" class="rounded float " src="assets/0.png"
+                                                        alt="Person">
+                                                    </img>
+
+                                                </div>
+                                                <div class="col my">
+                                                    <img id="navImg" class="rounded float " src="assets/n2.png"
+                                                        alt="Person">
+                                                    <button
+                                                        class="nav-link  sec1button border border-primary introButton"
+                                                        id="v-pills-step2-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-step2" type="button" role="tab"
+                                                        aria-controls="v-pills-step2" aria-selected="false">
+                                                        Step statement
+                                                    </button>
+                                                    <img id="clickImg" class="rounded float hidden" src="assets/0.png"
+                                                        alt="Person">
+                                                </div>
+                                                <div class="col my">
+                                                    <img id="navImg" class="rounded float " src="assets/n3.png"
+                                                        alt="Person">
+                                                    <button
+                                                        class="nav-link  sec1button border border-primary introButton"
+                                                        id="v-pills-step3-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-step3" type="button" role="tab"
+                                                        aria-controls="v-pills-step3" aria-selected="false">
+                                                        Step statement
+                                                    </button>
+                                                    <img id="clickImg" class="rounded float hidden" src="assets/0.png"
+                                                        alt="Person">
+
+                                                </div>
+                                                <div class="col my">
+                                                    <img id="navImg" class="rounded float " src="assets/n4.png"
+                                                        alt="Person">
+                                                    <button
+                                                        class="nav-link  sec1button border border-primary introButton"
+                                                        id="v-pills-step4-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-step4" type="button" role="tab"
+                                                        aria-controls="v-pills-step4" aria-selected="false">
+                                                        Step statement
+                                                    </button>
+                                                    <img id="clickImg" class="rounded float hidden" src="assets/0.png"
+                                                        alt="Person">
+
+                                                </div>
+                                                <div class="col my">
+                                                    <button
+                                                        class="nav-link  sec1button border border-primary introButton "
+                                                        id="v-pills-step5-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-step5" type="button" role="tab"
+                                                        aria-controls="v-pills-step5" aria-selected="false">
+                                                        All steps statement
+                                                    </button>
+                                                    <img id="clickImg" class="rounded float hidden" src="assets/0.png"
+                                                        alt="Person">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col border border-5 overflow-auto"
+                                        style="height: 300px; background-color: rgba(0,0,255,.1)">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-step1" role="tabpanel"
+                                                aria-labelledby="v-pills-step1-tab">
+                                                Let us calculate the given function as x values approach 4 from both
+                                                directions.
+                                                <br>
+                                                We will use x values as
+                                                <br>
+                                                3.9, 3.99, 3.999, 3.9999, 3.99999, 4.1, 4.01, 4.001, 4.0001, and
+                                                4.00001.
+                                                <img id="conImg" class="rounded float " src="assets/con4.jpg"
+                                                    alt="Person">
+                                                    <img id="conImg" class="rounded float " src="assets/con4.1.jpg"
+                                                    alt="Person">
+
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-step2" role="tabpanel"
+                                                aria-labelledby="v-pills-step2-tab">
+                                                After inspecting this table, we see that the functional values less than
+                                                4 appear to
+                                                be
+                                                decreasing toward 0.25
+                                                <br> whereas the functional values greater than 4 appear to be
+                                                increasing toward 0.25.
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-step3" role="tabpanel"
+                                                aria-labelledby="v-pills-step3-tab">
+                                                As both columns approach a common f(x) value, 0.25, we conclude that .
+                                                <br>
+                                                $$ \lim_{x\ \to \ 4} \frac{\sqrt{x}-2}{x-4} = 0.25 $$
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-step4" role="tabpanel"
+                                                aria-labelledby="v-pills-step4-tab">
+                                                A calculator or computer-generated graph of \( f(x)=
+                                                \frac{\sqrt{x}-2}{x-4} \)
+                                                <br>
+                                                would be similar to that shown below and it confirms our estimate.
+                                                <img id="conImg" class="rounded float " src="assets/con5.jpg"
+                                                    alt="Person">
+                                                <br>
+                                                At this point, we see from Example 2.4 and Example 2.5 that it may be
+                                                just as easy,
+                                                if
+                                                not easier, to estimate a limit of a function by inspecting its graph as
+                                                it is to
+                                                estimate the limit by using a table of functional values. In Example
+                                                2.6, we
+                                                evaluate a
+                                                limit exclusively by looking at a graph rather than by using a table of
+                                                functional
+                                                values.
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-step5" role="tabpanel"
+                                                aria-labelledby="v-pills-step5-tab">
+                                                Let us calculate the given function as x values approach 4 from both
+                                                directions.
+                                                <br>
+                                                We will use x values as
+                                                <br>
+                                                3.9, 3.99, 3.999, 3.9999, 3.99999, 4.1, 4.01, 4.001, 4.0001, and
+                                                4.00001.
+                                                <img id="conImg" class="rounded float " src="assets/con4.jpg"
+                                                    alt="Person">
+                                                    <img id="conImg" class="rounded float " src="assets/con4.1.jpg"
+                                                    alt="Person">
+                                                <br>
+                                                After inspecting this table, we see that the functional values less than
+                                                4 appear to
+                                                be
+                                                decreasing toward 0.25
+                                                <br> whereas the functional values greater than 4 appear to be
+                                                increasing toward 0.25.
+                                                <br>
+                                                As both columns approach a common f(x) value, 0.25, we conclude that .
+                                                <br>
+                                                $$ \lim_{x\ \to \ 4} \frac{\sqrt{x}-2}{x-4} = 0.25 $$
+                                                <br>
+                                                A calculator or computer-generated graph of \( f(x)=
+                                                \frac{\sqrt{x}-2}{x-4} \)
+                                                <br>
+                                                would be similar to that shown below and it confirms our estimate.
+                                                <img id="conImg" class="rounded float " src="assets/con5.jpg"
+                                                    alt="Person">
+                                                <br>
+                                                At this point, we see from Example 2.4 and Example 2.5 that it may be
+                                                just as easy,
+                                                if
+                                                not easier, to estimate a limit of a function by inspecting its graph as
+                                                it is to
+                                                estimate the limit by using a table of functional values. In Example
+                                                2.6, we
+                                                evaluate a
+                                                limit exclusively by looking at a graph rather than by using a table of
+                                                functional
+                                                values.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-xl intro tryit">
+                                <div class="row  align-items-end ">
+                                    <div class="col order-1">
+                                        <a id="n1" class="nav-link">
+                                            <div id="navCon " class="d-flex justify-content-end">
+                                                <img id="navImg" src="assets/img9.png" alt="Person">
+                                                <div class="col-md-1"> <button type="button"
+                                                        class="btn btn-secondary btn" data-bs-toggle="modal"
+                                                        data-bs-target="#staticBackdrop1">
+                                                        <col>
+                                                        Summary
+                                                    </button>
+
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="staticBackdrop1"
+                                                        data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                                                        aria-labelledby="staticBackdrop1Label" aria-hidden="true">
+                                                        <div
+                                                            class=" modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h1 class="modal-title fs-5 "
+                                                                        id="staticBackdrop1Label"> Summary
+                                                                    </h1>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body ">
+                                                                    <p>In this subsection, you learned how to describe
+                                                                        limits using
+                                                                        correct notation. You also learned how to
+                                                                        evaluate a limit
+                                                                        using
+                                                                        a table of functional values and using graphs.
+
+                                                                    </p>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <section id="section5">
+                                <footer class="bg-light text-center text-lg-start">
+                                    <!-- Copyright -->
+                                    <div class="text-center " style="background-color: rgba(0, 0, 0, 0.2);">
+                                        © 2021 Copyright:
+                                        <a class="text-dark" href="https://upthink.com/">Upthink.com</a>
+                                    </div>
+                                    <!-- Copyright -->
+                                </footer>
+                            </section>
+                        </section>
+
+                    </div>
+                    <div class=" swiper-slide ">
+
+                        <section id="section4" class="container-fluid pageSection ">
+                            <div class="container intro internalDiv ">
+                                <p id="Problem">
+                                    Find the limit of function f(x)= \( \displaystyle
+                                    \lim_{x\ \to \ 8} \frac{x^{2}-64}{x-8}\)
+                                    <br>
+                                </p>
+                            </div>
+                            <div class="container sec4Problem text-center">
+                                <div class="row justify-content-around ">
+                                    <div class="col-4 ">
+                                        <img id="noImg" src="assets/n1.png" alt="Person">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-primary my1" for="btnradio1">
+
+
+                                            <h3>-8</h3>
+                                        </label>
+                                    </div>
+                                    <div class="col-4">
+                                        <img id="noImg" src="assets/n2.png" alt="Person">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-primary my1" for="btnradio2">
+
+                                            <h3>8</h3>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container sec4Problem text-center">
+                                <div class="row justify-content-around">
+                                    <div class="col-4">
+                                        <img id="noImg" src="assets/n3.png" alt="Person">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-primary my1" for="btnradio3">
+
+                                            <h3>16</h3>
+                                        </label>
+                                    </div>
+                                    <div class="col-4">
+                                        <img id="noImg" src="assets/n4.png" alt="Person">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-primary my1" for="btnradio4">
+
+                                            <h3>DND
+                                            </h3>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col">
+                                        <button id="submit" type="button" class="btn btn-success">Submit</button>
+                                    </div>
+                                    <div class="col">
+                                        <span class="d-inline-block" id="hint" tabindex="0" data-bs-toggle="popover"
+                                            data-bs-placement="top" data-bs-trigger="hover focus"
+                                            data-bs-content="Disabled popover">
+                                            <button id="hint" class="btn btn-secondary" type="button" disabled>
+                                                Hint</button>
+                                        </span>
+                                    </div>
+                                    <div class="col">
+
+                                        <div id="navCon " class="d-flex justify-content-end">
+                                            <div class="col">
+                                                <button type="button" id="hint" class="btn btn-primary "
+                                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                                                    <col>
+                                                    Show Answer
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static"
+                                                    data-bs-keyboard="false" tabindex="-1"
+                                                    aria-labelledby="staticBackdrop3Label" aria-hidden="true">
+                                                    <div
+                                                        class=" modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h1 class="modal-title fs-5 " id="staticBackdrop3Label">
+                                                                    Answer </h1>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body ">
+                                                                <p> f(x)= \( \displaystyle
+                                                                    \lim_{x\ \to \ 8} \frac{x^{2}-64}{x-8}\)= \(
+                                                                    \displaystyle
+                                                                    \lim_{x\ \to \ 8} \frac{(x-8)(x+8)}{x-8}\)
+                                                                    <br>
+                                                                    \( \displaystyle
+                                                                    \lim_{x\ \to \ 8} (x+8) = 16\)
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container text-center ">
+                                <div class="row ">
+                                    <div class="col sec4end">
+                                        content
+                                    </div>
+                                </div>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary float-end" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Next topic
+                                </button>
+                                <a href="./assets/Limits.pdf" download="Introduction to Limits">
+                                    <button type="button" class="btn btn-success float-start">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                                            </path>
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                                            </path>
+                                        </svg>
+                                        Download PDF
+                                    </button>
+                                </a>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Congratulations
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                You have successfully completed this topic
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                                    href="#">Next
+                                                    topic</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
